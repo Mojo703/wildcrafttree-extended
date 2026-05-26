@@ -1,0 +1,21 @@
+[
+	{
+		ingredientPattern: "HGS,PAP,PNP",
+		ingredients: {
+			"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 5 },
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 5 },
+			"A": { type: "block", code: "game:woodenaxle-ud" },
+			"P": { type: "item", code: "wildcrafttree:plank-*", quantity: 4 },
+			"N": { type: "item", code: "game:metalnailsandstrips-{metal}", quantity: 2 },
+			"G": { type: "item", code: "game:grindstone-{rock}" }
+		},
+		allowedVariants: {
+			metal: ["copper", "blackbronze", "tinbronze", "bismuthbronze", "iron", "silver", "gold", "meteoriciron", "steel", "electrum" ],
+			rock: ["chert", "claystone", "sandstone"]
+		},
+		name: "grindstone",
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "game:grindingwheel-wood-north"  }
+	}
+]

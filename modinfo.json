@@ -1,0 +1,13 @@
+﻿{
+  "type": "content",
+  "modid": "wildcrafttree",
+  "name": "Wildcraft: Trees and Shrubs",
+  "authors": [
+    "gabb (code)",
+    "Ледяная Соня (textures, models)",
+    "CATASTEROID (some assets)",
+  ],
+  "description": "Adds an assortment new trees and shrubs",
+  "version": "1.3.4",
+  "dependencies": {"herbarium": "1.4.0" }
+}

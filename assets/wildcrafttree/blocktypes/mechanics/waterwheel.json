@@ -1,0 +1,80 @@
+{
+	code: "waterwheel",
+	class: "BlockWaterwheel",
+	entityClass: "Generic",
+	entityBehaviors: [
+		{ name: "Burning" }, 
+		{ name: "MPWaterWheel" },
+		{ name: "RightClickConstructable", properties: {
+			brokenDropsRatio: 0.8,
+			stages: [
+				{ addElements: [ "MainOrigin/ORIGIN1WoodShaft", "MainOrigin/ORIGIN2Hubs" ] },
+				{ requireStacks: [ { type: "block", name: "waterwheelbuilding-ingredient-supportbeams", code: "wildcrafttree:supportbeam-{wood}", allowedVariants: ["guajacum", "leadwood", "saxaul", "azobe", "dalbergia", "umnini", "ohia", "tigerwood", "sal", "eucalyptus", "ghostgum", "satinash", "honeylocust", "ash", "beech", "elm", "jacaranda", "sapele", "petrified"], quantity: 16, storeWildCard: "wood" } ], addElements: ["MainOrigin/ORIGIN3Spokes"] },
+				{ requireStacks: [ { type: "item", code: "wildcrafttree:plank-{wood}", quantity: 48 }, { type: "item", code: "game:resin", quantity: 4 } ], addElements: ["MainOrigin/ORIGIN4Rims"] },
+				{ requireStacks: [ { type: "block", code: "wildcrafttree:supportbeam-{wood}", quantity: 16 }, { type: "item", code: "game:resin", quantity: 4 } ], addElements: ["MainOrigin/ORIGIN5Braces"] },
+				{ requireStacks: [ { type: "item", code: "game:metalnailsandstrips-*", storeWildCard: "metal", quantity: 8 } ], addElements: ["MainOrigin/ORIGIN6NailsStrips"] },
+				{ requireStacks: [ { type: "item", code: "wildcrafttree:plank-{wood}", quantity: 48 }, { type: "item", code: "game:resin", quantity: 4 } ], addElements: ["MainOrigin/ORIGIN7Paddles"] },
+				{ requireStacks: [ ], actionLangCode: "Launch" }
+			],
+		} },
+	],
+	behaviors: [ {name: "HorizontalOrientable"}, { name: "BlockEntityInteract" } ],
+	attributes: {
+		handbook: {
+			groupBy: ["waterwheel-*"]
+		}
+	},
+	variantgroups: [
+		{ code: "size", states: ["3m"] },
+		{ code: "side", loadFromProperties: "game:abstract/horizontalorientation" }
+	],
+	creativeinventory: { "general": ["*-north"], "mechanics": ["*-north"], "wildcrafttree": ["*-north"] },
+	shape: {
+		base: "game:block/wood/mechanics/waterwheel{size}", 
+		rotateYByType: { "*-north": 90, "*-east": 0, "*-south": 270, "*-west": 180 },
+		selectiveElements: ["MainOrigin/ORIGIN1WoodShaft/*", "MainOrigin/ORIGIN2Hubs/*"]
+	},	
+	blockmaterial: "Wood",
+	textures: {
+		wood: { base: "game:block/wood/planks/generic" },
+		cloth: { base: "game:block/cloth/linen/normal1" }
+	},
+	sidesolid: {
+		all: false
+	},
+	sideopaque: {
+		all: false
+	},
+	combustibleProps: {
+		burnTemperature: 600,
+		burnDuration: 20,
+	},
+
+	rainPermeable: true,
+	drops: [
+		{ type: "block", code: "wildcrafttree:waterwheel-{size}-north" }, 
+	],
+	resistance: 3.5,
+	lightAbsorption: 0,
+	maxStackSize: 4,
+	guiTransform: {
+		origin: { x: 0.45, y: 0.5, z: 0.5 },
+		scale: 1.74
+	},
+	tpHandTransform: {
+		translation: { x: -0.5, y: -0.4, z: -0.4 },
+		rotation: { x: 0, y: -90, z: 0 },
+		scale: 1
+	},
+	groundTransform: {
+		translation: { x: -0.08, y: 0.24, z: 0 },
+		rotation: { x: 0, y: 0, z: 45 },
+		scale: 5
+	},
+	sounds: {
+		"hit": "game:block/planks",
+		"break": "game:block/planks",
+		"place": "game:block/planks",
+		"walk": "game:walk/wood"
+	}
+}
