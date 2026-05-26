@@ -9,6 +9,12 @@
 - Fixed modded fish/seashell storage flags (updated to current vanilla item/block paths)
 - Removed an orphaned clay pot patch that referenced a nonexistent latex-glue and only produced load errors
 - Added crafting for the metal windmill rotor and large windmill sails using the mod's harder wood types
+- Added Vintage Story 1.22.2 wood-typed cabinet and cabinet door support for all modded wood types
+- Added generated cabinet textures for modded woods, including manually revised guajacum, sal and jacaranda variants
+- Added Vintage Story 1.22.2 recipe support for mannequins, waterwheels, spur gears, bellows and grinding wheels
+- Added Vintage Story 1.22.2 mechanical block support for modded-wood waterwheels and spur gears
+- Renamed the displayed mod name to Wildcraft: Trees and Shrubs Extended
+- Removed temporary cabinet texture workbench files from the packaged mod and repository
 
  1.3.3
 
