@@ -1,0 +1,14 @@
+acacia
+aged
+baldcypress
+birch
+ebony
+kapok
+larch
+maple
+oak
+pine
+purpleheart
+redwood
+veryaged
+walnut

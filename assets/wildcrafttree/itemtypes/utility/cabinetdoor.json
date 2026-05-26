@@ -103,12 +103,12 @@
 		translationEntries: ["material-{wood}", "material-{metal}", "glass-{glass}", null],
 		defaults: ["oak", "iron", "vintage", "middle"],
 		textureMapping: {
-			"doors": "block/wood/cabinet/planks/{wood}1",
+			"doors": "block/wood/cabinet/1block/doors/solid/{section}/{wood}",
 			"hardware": "game:block/metal/plate/{metal}",
 			"glass": "game:block/glass/{glass}",
-			"wood-back": "block/wood/cabinet/planks/{wood}2",
-			"wood-side": "block/wood/cabinet/planks/{wood}2",
-			"wood-top": "block/wood/cabinet/planks/{wood}4"
+			"wood-back": "block/wood/cabinet/1block/wood/side/{wood}",
+			"wood-side": "block/wood/cabinet/1block/wood/side/{wood}",
+			"wood-top": "block/wood/cabinet/1block/wood/top/wood-top1/{wood}"
 		}		
 	},
 	shape: { base: "game:block/wood/cabinet/1block/door/{type}/middle" },

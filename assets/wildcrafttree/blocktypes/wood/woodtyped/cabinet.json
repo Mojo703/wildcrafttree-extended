@@ -31,28 +31,28 @@
 		defaults: ["oak", "iron", "vintage"],
 		textureMappingByType: {
 			"cabinet-middle": {
-				"doors": "block/wood/cabinet/planks/{wood}1",
+				"doors": "block/wood/cabinet/1block/doors/solid/middle/{wood}",
 				"hardware": "game:block/metal/plate/{metal}",
 				"glass": "game:block/glass/{glass}",
-				"wood-back": "block/wood/cabinet/planks/{wood}2",
-				"wood-side": "block/wood/cabinet/planks/{wood}2",
-				"wood-top": "block/wood/cabinet/planks/{wood}3"
+				"wood-back": "block/wood/cabinet/1block/wood/side/{wood}",
+				"wood-side": "block/wood/cabinet/1block/wood/side/{wood}",
+				"wood-top": "block/wood/cabinet/1block/wood/top/wood-top2/{wood}"
 			},
 			"cabinet-bottom": {
-				"doors": "block/wood/cabinet/planks/{wood}1",
+				"doors": "block/wood/cabinet/1block/doors/solid/middle/{wood}",
 				"hardware": "game:block/metal/plate/{metal}",
 				"glass": "game:block/glass/{glass}",
-				"wood-back": "block/wood/cabinet/planks/{wood}2",
-				"wood-side": "block/wood/cabinet/planks/{wood}2",
-				"wood-top": "block/wood/cabinet/planks/{wood}3"
+				"wood-back": "block/wood/cabinet/1block/wood/side/{wood}",
+				"wood-side": "block/wood/cabinet/1block/wood/side/{wood}",
+				"wood-top": "block/wood/cabinet/1block/wood/top/wood-top2/{wood}"
 			},
 			"*": {
-				"doors": "block/wood/cabinet/planks/{wood}1",
+				"doors": "block/wood/cabinet/1block/doors/solid/middle/{wood}",
 				"hardware": "game:block/metal/plate/{metal}",
 				"glass": "game:block/glass/{glass}",
-				"wood-back": "block/wood/cabinet/planks/{wood}2",
-				"wood-side": "block/wood/cabinet/planks/{wood}2",
-				"wood-top": "block/wood/cabinet/planks/{wood}4"
+				"wood-back": "block/wood/cabinet/1block/wood/side/{wood}",
+				"wood-side": "block/wood/cabinet/1block/wood/side/{wood}",
+				"wood-top": "block/wood/cabinet/1block/wood/top/wood-top1/{wood}"
 			}
 		},
 		handbook: {
